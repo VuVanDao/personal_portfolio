@@ -54,7 +54,7 @@ const Banner = () => {
                 {`Hi I'm `}
                 <span className="wrap">{text}</span>
               </h1>
-              <p>Introduce my self</p>
+              <p>My name is Vu Van Dao</p>
               <button onClick={() => console.log("connect")}>
                 Connect
                 <GrConnect size={25} className="svg" />

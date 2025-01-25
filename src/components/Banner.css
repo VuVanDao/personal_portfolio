@@ -44,10 +44,14 @@
   letter-spacing: 0.8px;
   display: inline-flex;
   align-items: center;
-  transition: 0.25s;
+}
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
 }
 .banner button:hover .svg {
-  transition: 0.25s;
   margin-left: 25px;
 }
 .banner img {
@@ -55,13 +59,13 @@
 }
 @keyframes updown {
   0% {
-    transform: translateY(-20px);
+    transform: translateY(-15px);
   }
   50% {
-    transform: translateY(20px);
+    transform: translateY(15px);
   }
   100% {
-    transform: translateY(-20px);
+    transform: translateY(-15px);
   }
 }
 .txt-rotate > .wrap {
