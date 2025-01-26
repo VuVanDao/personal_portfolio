@@ -3,14 +3,13 @@ import "./Contact.css";
 import { Col, Container, Row } from "react-bootstrap";
 import contactImg from "../assets/images/contact-img.svg";
 const Contact = () => {
-  let formInitialDetails = {
+  let [formDetails, setFormDetail] = useState({
     firstName: "",
     lastName: "",
     email: "",
     phone: "",
     message: "",
-  };
-  let [formDetails, setFormDetail] = useState(formInitialDetails);
+  });
   let [buttonText, setButtonText] = useState("Send");
   let [status, setStatus] = useState({});
   const onFromUpdate = (id, value) => {
@@ -22,24 +21,31 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending....");
-    let res = await fetch("http://localhost:5000/contact", {
-      method: "post",
-      headers: {
-        "Content-Type": "Application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
+    // let res = await fetch("http://localhost:5000/contact", {
+    //   method: "post",
+    //   headers: {
+    //     "Content-Type": "Application/json;charset=utf-8",
+    //   },
+    //   body: JSON.stringify(formDetails),
+    // });
     setButtonText("Send");
-    let result = await res.json();
-    setFormDetail(formInitialDetails);
-    if (result.code === 200) {
-      setStatus({ success: true, message: "Message sent successfully" });
-    } else {
-      setStatus({
-        success: false,
-        message: "Something wrong. Try again later",
-      });
-    }
+    // let result = await res.json();
+    setFormDetail({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+    // if (result.code === 200) {
+    //   setStatus({ success: true, message: "Message sent successfully" });
+    // } else {
+    //   setStatus({
+    //     success: false,
+    //     message: "Something wrong. Try again later",
+    //   });
+    // }
+    console.log(">>>", formDetails);
   };
   return (
     <section className="contact" id="connect">
@@ -55,7 +61,7 @@ const Contact = () => {
                 <Col sm={6} className="px-1">
                   <input
                     type="text"
-                    value={formInitialDetails.firstName}
+                    value={formDetails.firstName}
                     placeholder="First Name"
                     onChange={(event) =>
                       onFromUpdate("firstName", event.target.value)
@@ -65,7 +71,7 @@ const Contact = () => {
                 <Col sm={6} className="px-1">
                   <input
                     type="text"
-                    value={formInitialDetails.lastName}
+                    value={formDetails.lastName}
                     placeholder="Last Name"
                     onChange={(event) =>
                       onFromUpdate("lastName", event.target.value)
@@ -75,7 +81,7 @@ const Contact = () => {
                 <Col sm={6} className="px-1">
                   <input
                     type="email"
-                    value={formInitialDetails.email}
+                    value={formDetails.email}
                     placeholder="Email"
                     onChange={(event) =>
                       onFromUpdate("email", event.target.value)
@@ -85,7 +91,7 @@ const Contact = () => {
                 <Col sm={6} className="px-1">
                   <input
                     type="text"
-                    value={formInitialDetails.phone}
+                    value={formDetails.phone}
                     placeholder="Phone"
                     onChange={(event) =>
                       onFromUpdate("phone", event.target.value)
@@ -95,7 +101,7 @@ const Contact = () => {
                 <Col>
                   <textarea
                     rows="6"
-                    value={formInitialDetails.message}
+                    value={formDetails.message}
                     placeholder="Message"
                     onChange={(event) =>
                       onFromUpdate("message", event.target.value)
