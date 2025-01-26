@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/personal_portfolio/static/css/main.2fc8d4bb.css",
+    "main.js": "/personal_portfolio/static/js/main.9a772f90.js",
+    "static/js/453.298f5782.chunk.js": "/personal_portfolio/static/js/453.298f5782.chunk.js",
+    "static/media/logoRobot.gif": "/personal_portfolio/static/media/logoRobot.c5b62736ea823cf3589e.gif",
+    "static/media/teamWorkLogo.gif": "/personal_portfolio/static/media/teamWorkLogo.248922e6017224f4a3aa.gif",
+    "static/media/color-sharp.png": "/personal_portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
+    "static/media/color-sharp2.png": "/personal_portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/BookingCare.gif": "/personal_portfolio/static/media/BookingCare.0a197ba55717b60f1f52.gif",
+    "static/media/imageDevWeb.gif": "/personal_portfolio/static/media/imageDevWeb.396ba4e85ff6f18b5e49.gif",
+    "static/media/banner-bg.png": "/personal_portfolio/static/media/banner-bg.cc1273af450504afe755.png",
+    "static/media/CentraNo2-Bold.ttf": "/personal_portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/personal_portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/personal_portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/footer-bg.png": "/personal_portfolio/static/media/footer-bg.7bd67c0f73571d0acc02.png",
+    "static/media/contact-img.svg": "/personal_portfolio/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
+    "static/media/jsLogo.jpg": "/personal_portfolio/static/media/jsLogo.091c30852d283633e4fa.jpg",
+    "static/media/nodeJsLogo.jpg": "/personal_portfolio/static/media/nodeJsLogo.590457951de2d6c82ef0.jpg",
+    "static/media/revicons.eot": "/personal_portfolio/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/personal_portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/personal_portfolio/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/personal_portfolio/index.html",
+    "main.2fc8d4bb.css.map": "/personal_portfolio/static/css/main.2fc8d4bb.css.map",
+    "main.9a772f90.js.map": "/personal_portfolio/static/js/main.9a772f90.js.map",
+    "453.298f5782.chunk.js.map": "/personal_portfolio/static/js/453.298f5782.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fc8d4bb.css",
+    "static/js/main.9a772f90.js"
+  ]
+}
