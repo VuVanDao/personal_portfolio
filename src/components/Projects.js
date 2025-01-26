@@ -11,7 +11,7 @@ const Projects = () => {
     { title: "bookingCare", description: "Nice", imgURL: BookingCare },
   ];
   return (
-    <section className="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col>

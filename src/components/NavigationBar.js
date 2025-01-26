@@ -25,7 +25,7 @@ const NavigationBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="logo" className="logo" />
+          <img src={logo} alt="logo" className="logo " />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggle-icon"></span>
@@ -46,7 +46,7 @@ const NavigationBar = () => {
                 activeLink === "skills" ? "active navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("skills")}
-              href="#Skills"
+              href="#skills"
             >
               Skills
             </Nav.Link>
