@@ -62,13 +62,13 @@ const NavigationBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#!">
+              <a href="https://www.linkedin.com/in/%C4%91%E1%BA%A1o-v%C5%A9-v%C4%83n-47b98b34a/">
                 <FaLinkedin className="social-icon-link" />
               </a>
-              <a href="#!">
+              <a href="https://github.com/VuVanDao">
                 <FaGithub className="social-icon-link" />
               </a>
-              <a href="#!">
+              <a href="https://www.facebook.com/vu.van.ao.208585">
                 <FaFacebook className="social-icon-link" />
               </a>
             </div>
